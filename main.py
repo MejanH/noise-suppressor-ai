@@ -17,7 +17,7 @@ def main():
         sys.exit(1)
     input_file = sys.argv[1]
     output_file = sys.argv[2] if len(sys.argv) > 2 else None
-    output_dir = "."
+    output_dir = "./temp"
 
     torch.cuda.empty_cache()
     model, df_state, suffix = init_df()
